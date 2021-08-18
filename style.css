@@ -19,9 +19,8 @@ body
 
 #home
 {
-    /* background-color: red; */
     width: 100%;
-    height: 80vh;
+    /* margin-bottom: -10vh; */
 }
 
 .icon
@@ -124,19 +123,14 @@ a
     background: #7268e4;
 }
 
-.container-header
-{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-}
+
 
 .header-info
 {
-    width: 45%;
+    width: 40%;
+    height: 100%;
     margin: auto;
-    height: 85%;
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -146,12 +140,11 @@ a
 {
     text-transform: uppercase;
     font-size: 2.2rem;
-    margin-bottom: 2vh;
+    margin-bottom: 3%;
 }
 
 .header-info p
 {
-    width: 80%;
     font-size: 1.1rem;
 }
 
@@ -181,43 +174,46 @@ a
 
 .phone-img
 {
-    width: 45%;
-    margin: 7vh auto;
-    height: 95%;
-    
+    width: 40%;
+    height: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
 
 .phone-img img
 {
-    height: 85%;
     width: 70%;
-    border-radius: 30px;
 }
+
+
 
 
 .container
 {
-    margin: 30vh auto;
+    margin:15vh auto;
+    /* padding: 0; */
     width: 100%;
-    height: 75vh;
-    /* background-color: red; */
+    height: 60vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .container-img
 {
     width: 40%;
     height: 100%;
+    display: flex;
     margin: auto;
+    justify-content: center;
 }
 
 .container-img img
 {
-    width: 90%;
+    width: 70%;
 }
 
 
@@ -270,7 +266,6 @@ footer
     width: 100%;
     height: 40vh;
     background-color: rgb(51, 50, 56);
-    margin-top: -20vh;
 }
 
 .foot-page
@@ -371,4 +366,18 @@ footer
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media (max-width: 700px)
+{
+    .container-header
+    {
+        flex-wrap: wrap;
+    }
+    .header-info
+    {
+        width: 100%;
+    }
+
 }
