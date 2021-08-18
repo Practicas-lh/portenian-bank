@@ -303,7 +303,7 @@ footer
 
 .icons a i
 {
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .icons a i:hover
@@ -371,13 +371,127 @@ footer
 
 @media (max-width: 700px)
 {
-    .container-header
+    .container
     {
-        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
     }
     .header-info
     {
+        width: 80%;
+        margin: 0;
+    }
+
+    .header-info h2
+    {
+        font-size: 1.7rem;
+    }
+
+    .header-info p
+    {
         width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+        padding:  0 10px;
+    }
+
+    .container-info
+    {
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        text-align: center;
+    }
+
+
+    .phone-img
+    {
+        /* width: 80%;
+        margin: 10vh 0; */
+        display: none;
+    }
+
+    .container-img
+    {
+        display: none;
+    }
+
+    .container-btn
+    {
+        width: 45%;
+    }
+
+
+
+
+
+
+
+    #contact
+    {
+        height: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .redes 
+    {
+        width: 100%;
+        margin: 5vh 0;
+    }
+
+    .redes img
+    {
+        width: 7%;
+    }
+
+    .icons a i
+    {
+        margin: 15px 0;
+        font-size: 1.8rem;
+    }
+
+    .foot-page
+    {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .politica 
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sector-2
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sector-2 h3
+    {
+        font-size: 1.8rem;
+    }
+
+    .sector-2 ul a li
+    {
+        font-size: 1.8rem;
+        margin-bottom: 5vh;
+    }
+    .sector-2 ul a:nth-child(3)
+    {
+        display: none;
+    }
+
+    .sector-2 ul a i
+    {
+        display: none;
+    }
+
+    .finish
+    {
+        display: none;
     }
 
 }
