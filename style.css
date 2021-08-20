@@ -89,7 +89,7 @@ a
     font-size: 1.2rem;
 }
 
-.second-nav input
+/* .second-nav input
 {
     border-radius: 10px;
     border: 1px solid;
@@ -99,7 +99,7 @@ a
     text-align: center;
     margin-right: 10px;
     margin-left: 7%;
-}
+} */
 
 .second-nav a:hover
 {
@@ -108,13 +108,42 @@ a
     transform: scale(1.2);
 }
 
+.serch
+{
+    /* background-color: red; */
+    display: flex;
+    margin: auto 5%;
+    width: 25%;
+    justify-content: center;
+    border-radius: 10px;
+    /* align-items: center; */
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.219);
+}
+
+.serch input
+{
+    width: 80%;
+    height: 100%;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+.serch input:focus
+{
+    outline: none;
+}
+
+
 .btn-serch
 {
+    width: 20%;
+    height: 100%;
     background: #FADF47;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     padding: 5px;
     cursor: pointer;
-    border: 1px solid;
+    border: none;
 }
 
 .btn-serch:hover
@@ -311,6 +340,17 @@ footer
     color: #7268e4;
 }
 
+.sector-2
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
 .sector-2 h3
 {
     font-size: 1.4rem;
@@ -335,6 +375,17 @@ footer
 .sector-2 ul a 
 {
     font-size: 0.9rem;
+}
+
+.sector-3
+{
+    margin: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
 }
 
 .sector-3 ul a li
@@ -371,6 +422,37 @@ footer
 
 @media (max-width: 700px)
 {
+    .second-nav
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .second-nav input
+    {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .serch
+    {
+        margin-top: 10vh;
+        width: 70%;
+        height: 5vh;
+    }
+
+    .serch input 
+    {
+        padding: auto;
+        margin: auto;
+    }
+    /* .btn-serch
+    {
+        width: 30%;
+    } */
+
     .container
     {
         width: 100%;
