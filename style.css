@@ -17,6 +17,10 @@ body
     background-color: rgb(235, 233, 233);
 }
 
+/* ============================
+    COMIENZA EL NAV
+============================ */
+
 #home
 {
     width: 100%;
@@ -75,6 +79,10 @@ a
     color: black;
 }
 
+/* ============================
+    COMIENZA EL SEGUNDO NAV
+============================ */
+
 .second-nav
 {
     margin-top: 5vh;
@@ -89,18 +97,6 @@ a
     font-size: 1.2rem;
 }
 
-/* .second-nav input
-{
-    border-radius: 10px;
-    border: 1px solid;
-    width: 20%;
-    padding:5px;
-    outline: none;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 7%;
-} */
-
 .second-nav a:hover
 {
     padding-bottom: 10px;
@@ -110,13 +106,11 @@ a
 
 .serch
 {
-    /* background-color: red; */
     display: flex;
     margin: auto 5%;
     width: 25%;
     justify-content: center;
     border-radius: 10px;
-    /* align-items: center; */
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.219);
 }
 
@@ -152,6 +146,9 @@ a
     background: #7268e4;
 }
 
+/* ============================
+    COMIENZA EL HEADER
+============================ */
 
 
 .header-info
@@ -163,6 +160,7 @@ a
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .header-info h2
@@ -218,17 +216,18 @@ a
 
 
 
+/* ============================
+    COMIENZA EL CONTAINER
+============================ */
 
 .container
 {
     margin:15vh auto;
-    /* padding: 0; */
     width: 100%;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
 
 .container-img
@@ -244,8 +243,6 @@ a
 {
     width: 70%;
 }
-
-
 
 .container-info
 {
@@ -264,7 +261,6 @@ a
     font-size: 2.2rem;
     margin-bottom: 5vh;
     color: #7268e4;
-    /* -webkit-text-stroke: 1px rgba(0, 0, 0, 0.774); */
     border-bottom: 2px solid #7268e4;
 }
 
@@ -289,6 +285,12 @@ a
     background-color: #7268e4;
     color:white;
 }
+
+
+/* ============================
+    COMIENZA EL FOOTER
+============================ */
+
 
 footer
 {
@@ -330,12 +332,8 @@ footer
     font-size: 1.5rem;
 }
 
-.icons a i
-{
-    /* margin-left: 10px; */
-}
 
-.icons a i:hover
+.icons i:hover
 {
     color: #7268e4;
 }
@@ -418,6 +416,14 @@ footer
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+/* ============================
+    COMIENZA EL RESPONSIVE
+============================ */
 
 
 @media (max-width: 700px)
