@@ -24,7 +24,8 @@ body
 #home
 {
     width: 100%;
-    /* margin-bottom: -10vh; */
+    position: sticky;
+    top:  0;
 }
 
 .icon
