@@ -18,24 +18,29 @@
             <img src="img/p-logo.png" alt="portenian-icon">
             <h1>Portenian Bank</h1>
         </div>
-        <nav class="nav-bar">
+        <nav id="site-nav" class="nav-bar">
            <ul>
                <li>
-                   <a href="nosotros.html" target="_blank">¿Quiénes somos?</a>
+                   <a href="nosotros.html">¿Quiénes somos?</a>
                </li>
                <li>
                     <a href="#contact">Contacto</a>
                 </li>
                 <li>
-                    <a href="signup.html" target="_blank">Registrarse</a>
+                    <a href="signup.html">Registrarse</a>
                 </li>
                 <li>
-                    <a href="signin.html" target="_blank">Iniciar Sesión</a>
+                    <a href="signin.html">Iniciar Sesión</a>
                 </li>
            </ul> 
         </nav>
+
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+
     </header>
-    
+
     <section class="second-nav">
         <ul>
             <li>
@@ -182,6 +187,6 @@
     </footer>
 
       
-
+<script src="index.js"></script>
 </body>
 </html>

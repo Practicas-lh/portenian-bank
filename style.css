@@ -422,6 +422,22 @@ footer
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ============================
     COMIENZA EL RESPONSIVE
 ============================ */
@@ -455,10 +471,6 @@ footer
         padding: auto;
         margin: auto;
     }
-    /* .btn-serch
-    {
-        width: 30%;
-    } */
 
     .container
     {
@@ -493,11 +505,8 @@ footer
         text-align: center;
     }
 
-
     .phone-img
     {
-        /* width: 80%;
-        margin: 10vh 0; */
         display: none;
     }
 
@@ -510,12 +519,6 @@ footer
     {
         width: 45%;
     }
-
-
-
-
-
-
 
     #contact
     {
@@ -582,5 +585,112 @@ footer
     {
         display: none;
     }
+
+
+/* ============================
+        MENU HAMBURGUESA    
+============================ */
+
+    .nav-bar{
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        top: 0;
+        clip-path: circle(0px at top right);
+        transition: clip-path ease-in-out 700ms;
+        justify-content: center;
+    }
+    .nav-bar ul 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+    }
+
+    .nav-bar ul li
+    {
+        border-bottom: 1px solid #FADF47;
+        padding-bottom: 10px;
+        margin: 15px;
+    }
+
+    .nav-bar ul li a:hover 
+    {
+        border: none;
+    }
+
+    /* .nav-bar ul li:nth-child(4)
+    {
+        background-color: transparent;
+        border-radius: 0;
+        font-weight: 400;
+    } */
+
+
+    .site-nav-open{
+        clip-path: circle(150% at top right);
+    }
+    .nav-bar ul li
+    {   
+        display: block;        
+    }
+
+    .icon
+    {
+        position: relative;
+    }
+
+    .icon img
+    {
+        width: 10%;
+    }
+    
+    header h1
+    {
+        font-size: 1.2rem;
+    }
+    .second-nav ul
+    {
+        text-align: center;
+    }   
+    
+    .menu-toggle{
+       
+        padding: 1em;
+        position: absolute;
+        top: .5em;
+        right: .5em;
+        
+    }
+    .menu-open .hamburger{
+        transform: rotate(45deg);
+    }
+    .menu-open .hamburger::before{
+        opacity: 0;
+    }
+    .menu-open .hamburger::after{
+        transform: translateY(-3px) rotate(-90deg);
+    }
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after{
+        content: '';
+        display: block;
+        background: black;
+        height: 3px;
+        width: 1.75em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+    }
+    
+    .hamburger::before{
+        transform: translateY(-6px);
+    }
+    .hamburger::after{
+        transform: translateY(3px);
+    }    
 
 }
