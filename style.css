@@ -3,10 +3,6 @@
     src: url();
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 *
 {
     padding: 0;
@@ -14,6 +10,7 @@ html {
     box-sizing: border-box;
     list-style: none;
     font-family: poppins;
+    scroll-behavior: smooth;
 } 
 
 body
