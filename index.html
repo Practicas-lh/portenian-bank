@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/p-logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/6573826cd2.js" crossorigin="anonymous"></script>
@@ -20,16 +21,16 @@
         </div>
         <nav id="site-nav" class="nav-bar">
            <ul>
-               <li>
-                   <a href="nosotros.html">¿Quiénes somos?</a>
-               </li>
-               <li>
+            <li onClick="cambiarClase()">
+                <a href="#up">Inicio</a>
+            </li>
+               <li onClick="cambiarClase()">
                     <a href="#contact">Contacto</a>
                 </li>
-                <li>
+                <li onClick="cambiarClase()">
                     <a href="signup.html">Registrarse</a>
                 </li>
-                <li>
+                <li onClick="cambiarClase()">
                     <a href="signin.html">Iniciar Sesión</a>
                 </li>
            </ul> 
@@ -41,7 +42,7 @@
 
     </header>
 
-    <section class="second-nav">
+    <section id="up" class="second-nav" >
         <ul>
             <li>
                 <a href="#cards">Tarjetas</a>
@@ -82,11 +83,11 @@
     </section>
 
 
-    <section id="cards" class="container">
-        <div class="container-img">
+    <section id="cards" class="container" >
+        <div class="container-img" data-aos="fade-right">
             <img src="img/cards-2.png" alt="cards-img">
         </div>
-        <div class="container-info">
+        <div class="container-info" data-aos="fade-left">
             <h2>Tarjetas</h2>
             <p>Conoce nuestras tarjetas de credito o debito.</p>
             <p>Obtenela <b>GRATIS</b> ahora.</p>
@@ -97,22 +98,22 @@
     </section>
 
     <section id="investmen" class="container">
-        <div class="container-info">
+        <div class="container-info" data-aos="fade-right">
             <h2>Inversiones</h2>
             <p>Tenemos la mejor tasa de interes para tus inversiones.</p>
             <p>Las podés realizar y controlar desde tu smartphone</p>
             <button class="container-btn">Obtener más info</button>
         </div>
-        <div class="container-img">
+        <div class="container-img" data-aos="fade-left">
             <img src="img/inversion.svg" alt="inversion-img">
         </div>
     </section>
 
     <section id="sure" class="container">
-        <div class="container-img">
+        <div class="container-img"  data-aos="fade-right">
             <img src="img/sure.svg" alt="sure-img">
         </div>
-        <div class="container-info">
+        <div class="container-info" data-aos="fade-left">
             <h2>Seguros</h2>
             <p>Con seguros Portenian, podés relajarte.</p>
             <p>Aseguramos tu hogar, auto, smartphone y demas.</p>
@@ -123,22 +124,22 @@
     </section>
 
     <section id="branch" class="container">
-        <div class="container-info">
+        <div class="container-info" data-aos="fade-right">
             <h2>Sucursales</h2>
             <p>Tenemos sucursales en varios puntos del pais.</p>
             <p>Pedí tu turno en la que te quede mas cerca.</p>
             <button class="container-btn">Conocelas todas</button>
         </div>
-        <div class="container-img">
+        <div class="container-img" data-aos="fade-left">
             <img src="img/map.svg" alt="map-img">
         </div>
     </section>
 
     <section id="loan" class="container">
-        <div class="container-img">
+        <div class="container-img" data-aos="fade-right">
             <img src="img/loan.svg" alt="loan-img">
         </div>
-        <div class="container-info">
+        <div class="container-info" data-aos="fade-left">
             <h2>Prestamos</h2>
             <p>Tenémos prestamos accesibles para cada necesidad.</p>
             <p>Empresas, Pymes, Hogar y personales.</p>
@@ -188,5 +189,10 @@
 
       
 <script src="index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
 </body>
 </html>

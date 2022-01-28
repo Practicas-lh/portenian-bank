@@ -3,6 +3,12 @@
     src: url();
 }
 
+html
+{
+    scroll-behavior: smooth;
+    scroll-padding: 95px;
+}
+
 *
 {
     padding: 0;
@@ -26,6 +32,7 @@ body
     width: 100%;
     position: sticky;
     top:  0;
+    z-index: 1;
 }
 
 .icon
@@ -58,20 +65,14 @@ body
     text-transform: uppercase;
     display: inline;
     margin-right: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-bar ul li:nth-child(4)
-{
-    background-color: #FADF47;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: 500;
-}
 
-.nav-bar ul li a:hover
-{
-    border-bottom: 3px solid #FADF47;
-    padding-bottom: 5px;
+
+.nav-bar ul li a:hover{
+    color:#FADF47;
+    transition: all 0.3s ease-in-out;
 }
 
 a
@@ -96,6 +97,7 @@ a
     display: inline;
     margin: 15px;
     font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .second-nav a:hover
@@ -103,6 +105,8 @@ a
     padding-bottom: 10px;
     border-bottom: 3px solid #FADF47;
     transform: scale(1.2);
+    color: rgb(77, 77, 77);
+    transition: all 0.3s ease-in-out;
 }
 
 .serch
@@ -139,17 +143,20 @@ a
     padding: 5px;
     cursor: pointer;
     border: none;
+    transition: all .3s ease-in-out;
 }
 
 .btn-serch:hover
 {
     color: white;
     background: #7268e4;
+    transition: all .3s ease-in-out;
 }
 
 /* ============================
     COMIENZA EL HEADER
 ============================ */
+
 
 
 .header-info
@@ -193,11 +200,13 @@ a
 {
     width: 100%;
     border-radius: 10px;
+    transition: all 0.5s;
 }
 
 .store a img:hover
 {
     transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .phone-img
@@ -213,8 +222,8 @@ a
 .phone-img img
 {
     width: 70%;
+    transition: all 1.5s ease-in-out;
 }
-
 
 
 /* ============================
@@ -278,6 +287,7 @@ a
     border: none;
     background-color: #FADF47;
     margin-top: 5vh;
+    transition: all 0.3s ease-in-out;
 }
 
 .container-btn:hover
@@ -285,6 +295,7 @@ a
     cursor: pointer;
     background-color: #7268e4;
     color:white;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -327,6 +338,7 @@ footer
     width: 7%
 }
 
+
 .icons
 {
     margin-top: 5%;
@@ -340,12 +352,14 @@ footer
     margin: auto 10px;
     color: white;
     color: grey;
+    transition: all .3s ease-in-out;
 }
 
 .icons i:hover
 {
     color: #7268e4;
     text-shadow: 0px 0px 10px  #7268e4;
+    transition: all .3s ease-in-out;
 }
 
 
@@ -376,11 +390,13 @@ footer
     font-size: 0.9rem;
     color: white;
     margin: 20px auto;
+    transition: all .3s ease-in-out;
 }
 
 .sector-2 ul a li:hover
 {
     color: #7268e4;
+    transition: all .3s ease-in-out;
 }
 
 .sector-2 ul a 
@@ -404,11 +420,13 @@ footer
     font-size: 0.9rem;
     color: white;
     margin-bottom: 10px;
+    transition: all .3s ease-in-out;
 }
 
 .sector-3 ul a li:hover
 {
     color: #7268e4;
+    transition: all .3s ease-in-out;
 }
 
 .politica
@@ -430,24 +448,6 @@ footer
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

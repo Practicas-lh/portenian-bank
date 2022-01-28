@@ -55,20 +55,15 @@ body
     text-transform: uppercase;
     display: inline;
     margin-right: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-bar ul li:nth-child(3)
-{
-    background-color: #FADF47;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: 500;
-}
 
 .nav-bar ul li a:hover
 {
-    border-bottom: 3px solid #FADF47;
-    padding-bottom: 5px;
+    color: #FADF47;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 a
@@ -122,17 +117,13 @@ a
     font-size: 5rem;
 }
 
-.text-form p
-{
+.text-form p{
     margin: 10px 0;
     font-size: 1.1rem;
 
 }
 
-
-
-.datos
-{
+.datos{
     width: 40%;
     height: 100%;
     display: flex;
@@ -140,35 +131,29 @@ a
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    border-radius:0 20px 20px 0;
     margin: auto;
 }
 
-.datos input
-{
+.datos input{
     width: 80%;
     text-decoration: none;
     border: 0px solid;
     background-color: rgb(235, 233, 233);
-    border-bottom: 1px solid;
-    /* margin: 5% 20%; */
+    border-bottom: 1px solid grey;
     padding: 5px;
     text-align: center;
 }
 
-.datos input:focus
-{
+.datos input:focus{
     outline: none;
 }
 
-.datos p
-{
+.datos p{
     font-size: .9rem;
     margin: auto;
 }
 
-.datos button
-{
+.datos button{
     width: 35%;
     height: 5vh;
     margin: auto;
@@ -177,21 +162,20 @@ a
     color: white;
     border: none;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
-.datos button:hover
-{
+.datos button:hover{
+    color: #7268e4;
     background-color: #FADF47;
-    color: black;
+    transition: all .3s ease-in-out;
 }
 
-.datos a 
-{
+.datos a {
     font-size: .8rem;
 }
 
-.datos a:hover
-{
+.datos a:hover{
     border-bottom: 1px solid #7268e4;
 }
 
